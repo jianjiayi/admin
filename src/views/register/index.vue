@@ -8,6 +8,24 @@
             <FormItem label="手机号" prop="phone">
               <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
             </FormItem>
+            <FormItem label="手机号" prop="phone">
+              <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
+            </FormItem><FormItem label="手机号" prop="phone">
+            <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
+          </FormItem>
+            <FormItem label="手机号" prop="phone">
+              <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
+            </FormItem><FormItem label="手机号" prop="phone">
+            <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
+          </FormItem><FormItem label="手机号" prop="phone">
+            <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
+          </FormItem><FormItem label="手机号" prop="phone">
+            <Input v-model="formValidate.phone" placeholder="输入手机号"></Input>
+          </FormItem>
+
+
+
+
             <FormItem label="验证码" prop="code">
               <Col span="10">
               <Input v-model="formValidate.code" placeholder="输入验证码"></Input>
