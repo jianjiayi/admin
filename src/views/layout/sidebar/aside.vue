@@ -6,9 +6,9 @@
           <div class="logo">
             <img src="@/assets/logo.png" alt="">
           </div>
-          <!--<div class="text">-->
-            <!--商家管理后台-->
-          <!--</div>-->
+          <div class="text">
+            {{activeMenu}}
+          </div>
         </div>
         <template v-for="(route, index) in menuList" :keys="index">
           <template v-if="route.children">
@@ -56,7 +56,7 @@
               route.children.map(croute => {
                 let ac = croute.name === this.$route.name;
                 if(ac){
-                  return this.openNames.push(route.name);
+                  return this.openNames=[route.name];
                 }
               })
             }
@@ -109,7 +109,7 @@
         .text{
           text-align: center;
           font-size: 18px;
-          line-height: 50px;
+          color: #000;
         }
       }
       .layout-logo:after{

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <myheader></myheader>
-    <div class="container1000 content">
+    <div class="container content">
       <h1 class="title">{{$route.meta.name}}</h1>
       <div v-if="$route.path=='/portal'" class="btn-group">
         <Button v-for="(item, index) in path" :key="index" type="ghost" @click="selectChange(item.name)">

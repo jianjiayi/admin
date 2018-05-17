@@ -43,7 +43,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -56,13 +56,13 @@
   i{
     font-style: normal;
   }
-  .container1000{
+  .container{
     position: relative;
-    width: 1000px;
     margin: 0 auto;
   }
-  .ivu-layout-header{
-    padding: 0;
+  @media screen and (min-width: 992px){
+    .container{
+      width: 1000px;
+    }
   }
-
 </style>

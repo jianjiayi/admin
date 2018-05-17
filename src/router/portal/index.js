@@ -1,12 +1,21 @@
 import forgetPath from './forget.js';//忘记密码路由
-import registerPath from './register.js';//注册信息路由
 
 import Portal from '@/views/portal/index.vue';
+import Agreement from '@/views/portal/agreement.vue'
 
-let originPath = [];
+
 const allowedRouterArray = [//添加路由模块
   forgetPath,
-  registerPath,
+];
+let originPath = [
+  {
+    path:'agreement',
+    name:'agreement',
+    meta:{
+      name:'商户协议',
+    },
+    component:Agreement,
+  }
 ];
 
 allowedRouterArray.map(router => {

@@ -22,9 +22,13 @@ router.beforeEach(({meta, path}, from, next) => {
   if (!auth && !isLogin && path != '/login') {
     return next({ path: '/login' })
   }else{
+    iView.LoadingBar.start();
     next()
   }
 })
+router.afterEach(route => {
+  iView.LoadingBar.finish();
+});
 
 /* eslint-disable no-new */
 new Vue({

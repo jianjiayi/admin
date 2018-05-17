@@ -5,16 +5,16 @@
         <Col span="4"></Col>
         <Col span="20">
           <Row type="flex" justify="end" align="middle" class="code-row-bg">
-            <ul class="icon-menu">
-              <li>
-                <router-link to="/">
-                  <Icon type="ios-home"></Icon>
-                </router-link>
-              </li>
-              <li>
-                <Icon type="ios-bell"></Icon>
-              </li>
-            </ul>
+            <!--<ul class="icon-menu">-->
+              <!--<li>-->
+                <!--<router-link to="/">-->
+                  <!--<Icon type="ios-home"></Icon>-->
+                <!--</router-link>-->
+              <!--</li>-->
+              <!--<li>-->
+                <!--<Icon type="ios-bell"></Icon>-->
+              <!--</li>-->
+            <!--</ul>-->
             <div class="welcome">
               欢迎
               <Dropdown>
@@ -23,7 +23,7 @@
                   <Icon type="arrow-down-b"></Icon>
                 </a>
                 <DropdownMenu slot="list">
-                  <DropdownItem @click.native="$router.push({name:'userCenter'})">个人中心</DropdownItem>
+                  <!--<DropdownItem @click.native="$router.push({name:'userCenter'})">个人中心</DropdownItem>-->
                   <DropdownItem @click.native="logoutModal = true">安全退出</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
